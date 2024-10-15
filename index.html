@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Arjun Tiwari">
+    <meta name="keywords" content="HTML CSS JS">
+    <meta name="description" content="A student registration system to add, edit, and delete student records">
+    <title>Student Registration System</title>
+
+    <!-- Google font -->
+    <link href='https://fonts.googleapis.com/css?family=AR One Sans' rel='stylesheet'>
+
+    <!-- MAIN CSS FILE -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Student Registration System</h1>
+        <p>Register students, update their information, and manage records easily.</p>
+    </header>
+
+    <section>
+        <div class="input">
+            <form id="student-form">
+                <label for="studentName">Student Name</label>
+                <input type="text" id="studentName" required>
+
+                <label for="studentID">Student ID</label>
+                <input type="number" id="studentID" required>
+
+                <label for="email">Email ID</label>
+                <input type="email" id="email" required>
+
+                <label for="contact">Contact No.</label>
+                <input type="tel" id="contact" required>
+
+                <button type="submit">Add Student</button>
+            </form>
+        </div>
+        <div class="output">
+            <h2>Registered Students</h2>
+            <table id="student-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>ID</th>
+                        <th>Email</th>
+                        <th>Contact</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="student-list">
+                    <!-- Dynamic content will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
